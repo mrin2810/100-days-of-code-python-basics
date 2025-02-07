@@ -31,7 +31,7 @@ player_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper and 
 print("You Chose:")
 print(graphics[player_choice])
 
-computer_choice = random.randin(0, 2)
+computer_choice = random.randint(0, 2)
 print("Computer Chose:")
 print(graphics[computer_choice])
 
