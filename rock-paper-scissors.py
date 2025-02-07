@@ -34,8 +34,10 @@ print(graphics[player_choice])
 computer_choice = random.randint(0, 2)
 print("Computer Chose:")
 print(graphics[computer_choice])
+if not 0 <= player_choice < 3:
+  print("You chose an invalid number")
 
-if player_choice == computer_choice:
+elif player_choice == computer_choice:
   print("It's a Tie")
 
 elif (player_choice + 1) % 3 == computer_choice:
