@@ -10,9 +10,16 @@ elif size == "M":
   total += 20
 elif size == "L":
   total += 25
+else:
+  print("You typed the wrong input")
 
 if pepperoni == "Y":
-  total += 2
+  if size == "S":
+    total += 2
+  else:
+    total += 3
 
 if extra_cheese == "Y":
   total += 1
+
+print("Your final bill is: $" + str(bill) + ".")
